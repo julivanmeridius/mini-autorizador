@@ -24,6 +24,7 @@
 		<surefire.version>3.0.0-M7</surefire.version>
 		<commons-lang.version>3.12.0</commons-lang.version>
 		<spring-cloud.version>2021.0.4</spring-cloud.version>
+		<mockito.version>4.8.0</mockito.version>
 	</properties>	
 	
 	<dependencies>
@@ -53,6 +54,13 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/org.mockito/mockito-core -->
+		<dependency>
+		    <groupId>org.mockito</groupId>
+		    <artifactId>mockito-core</artifactId>
+		    <version>${mockito.version}</version>
+		    <scope>test</scope>
 		</dependency>
 		<!-- BANCO DE DADOS - H2 -->
 		<dependency>
